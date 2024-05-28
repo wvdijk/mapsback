@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "MapsBack",
+  "description": "Puts Maps back in Google Search",
+  "version": "1.0",
+  "author": "Wieland van Dijk",
+  "homepage_url": "https://github.com/wvdijk",
+  "icons": {
+    "48": "icons/mapsback48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.google.com/*",
+        "*://www.google.nl/*"
+      ],
+      "js": [
+        "mapsback.js"
+      ]
+    }
+  ]
+}
